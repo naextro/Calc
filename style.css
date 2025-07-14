@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #181a20; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #23262f; 
+    padding: 32px 28px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+    min-width: 340px;
+}
+
+.container form input {
+    border: 1px solid #23262f;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #23262f;
+    font-size: 20px;
+    color: #f5f5f7;
+    cursor: pointer;
+    margin: 8px;
+    box-shadow: none;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+}
+
+.container form input:hover {
+    background: #353945;
+    border: 1.5px solid #353945;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 18px 0 24px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 38px;
+    background: #181a20;
+    color: #f5f5f7;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 136px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+}
+
+form input.equal:hover {
+    background: #b71c1c;
+}
+
+form input.operator {
+    color: #64b5f6;
+    background: #23262f;
+    border: 1px solid #23262f;
+}
+
+form input.operator:hover {
+    background: #353945;
+    color: #90caf9;
+    border: 1.5px solid #353945;
+}
